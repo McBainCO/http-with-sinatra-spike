@@ -1,0 +1,9 @@
+<h1>Hello! Welcome to my awesome application!</h1>
+
+<h2><a href="/items">Find out how many items there are!</a></h2>
+
+<ul>
+    <% items.each_with_index do |item, index | %>
+    <li><a href="/items/<%=index%>"><%=item%></a></li>
+    <% end %>
+</ul>
